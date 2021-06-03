@@ -2,14 +2,15 @@ name: ContinuousIntegrationTesting
 
 on:
 	push:
-		branches: [main]
+    branches:
+      - main
 
-	jobs:
-		build:
-			runs-on: windows-latest
-			steps:
-				- name: Checkout code
-					uses: actions/checkout@v2
+jobs:
+  build:
+    runs-on: windows-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
 					
 				- name: Setup MSBuild
           uses: microsoft/setup-msbuild@v1

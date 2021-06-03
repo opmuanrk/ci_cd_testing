@@ -2,8 +2,7 @@ name: ContinuousIntegrationTesting
 
 on:
 	push:
-		branches:
-			- main
+		branches: [main]
 
 	jobs:
 		build:

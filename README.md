@@ -1,0 +1,1 @@
+[![ContinuousIntegrationTesting](https://github.com/pizzayperros/ci_cd_testing/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/pizzayperros/ci_cd_testing/actions/workflows/continuous-integration.yml)

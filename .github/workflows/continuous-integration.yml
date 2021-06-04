@@ -15,6 +15,12 @@ jobs:
         - name: Setup MSBuild
           uses: microsoft/setup-msbuild@v1
 
+        - name: Setup NuGet
+          uses: NuGet/setup-nuget@v1.0.2
+
+        - name: Restore Packages
+          run: nuget restore CICDTestingApplication\CICDTestingApplication.sln
+
         - name: Build Solution
           run: msbuild CICDTestingApplication\CICDTestingApplication.sln
         
